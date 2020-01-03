@@ -118,13 +118,14 @@ call plug#end()
 
 filetype plugin indent on
 
+let mapleader="\<space>"
 "vim-script的仓库
 "+---------------------------------------------------------
 "|自定义按键
 "|
 "+---------------------------------------------------------
 "nerdtree 按键映射
-noremap <leader>ft :NERDTreeToggle<cr>
+noremap <leader>f :NERDTreeToggle<cr>
 "
 "insert 模式中删除一行
 inoremap <c-d> <ESC>ddi
@@ -147,7 +148,6 @@ noremap <c-i> 0
 "Extral Configuration
 let g:jsx_ext_required=0
 
-let mapleader="\<space>"
 
 "wiki configuration
 "
