@@ -149,6 +149,10 @@ let g:jsx_ext_required=0
 let delimitMate_matchpairs="(:),[:],{:}"
 au FileType vim,html let b:delimitMate_matchpairs = "(:),[:],{:}"
 
+"vim-markdown configuration
+let g:vim_markdown_folding_disabled=1
+let g:vim_markdown_toc_autofit=1
+
 "****************************coc.nvim configuration*********************
 "coc.nvim configuration
 set cmdheight=1
@@ -172,7 +176,8 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" Use <c-space> to trigger completion.
+" Use <c-space> to trigger completion,may have conflicts with default
+" shortcuts in macos
 inoremap <silent><expr> <c-space> coc#refresh()
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
