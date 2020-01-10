@@ -17,7 +17,8 @@ set cursorline
 colorscheme molokai
 "set fdm=indent set sourcecode folding
 set fdm=marker
-set guifont=Monaco:h15:i
+"set guifont=Monaco:h15:i
+set guifont=Fira\ Code:h15:i
 "set guifont=DejaVu\ Sans\ Mono:h13:i
 "set guifont=Fira\ Code:h13:i
 let $LANG='en'
