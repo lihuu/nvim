@@ -276,4 +276,8 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 "
 
-
+"config for prettier
+let g:prettier#autoformat = 0                                                                                       
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html Prettier
+"g:prettier#config#parser = 'babylon'
+let g:prettier#config#parser='babylon'
