@@ -275,10 +275,10 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 "
 
 "config for prettier
-"let g:prettier#autoformat = 0                                                                                       
-"autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html Prettier
+let g:prettier#autoformat = 0                                                                                       
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html Prettier
 "g:prettier#config#parser = 'babylon'
-"let g:prettier#config#parser='babylon'
+let g:prettier#config#parser='babylon'
 
 "nerdtree 按键映射
 noremap <leader>f :NERDTreeToggle<cr>
