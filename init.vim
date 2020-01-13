@@ -23,10 +23,6 @@ set guifont=Fira\ Code:h15:i
 "set guifont=Fira\ Code:h13:i
 let $LANG='en'
 set langmenu='en'
-"source $VIMRUNTIME/vimrc_example.vim
-"source $VIMRUNTIME/mswin.vim
-"source $VIMRUNTIME/delmenu.vim
-"source $VIMRUNTIME/menu.vim
 behave mswin
 set fileencodings=utf-8,chinese,latin-1,latin1
 set encoding=utf-8
@@ -100,14 +96,6 @@ Plug 'mhinz/vim-startify'
 Plug 'vim-scripts/DrawIt'
 "Code format
 Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'gr    aphql', 'markdown', 'vue', 'yaml', 'html'] }
-
-if has('gui_running')
-"    Plug 'vim-multiple-cursors'
-endif
-if v:version < 704
-    Plug 'Pydiction'
-    Plug 'Python-mode-klen'
-endif
 
 call plug#end()
 
