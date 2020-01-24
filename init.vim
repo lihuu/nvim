@@ -96,6 +96,7 @@ Plug 'mhinz/vim-startify'
 Plug 'vim-scripts/DrawIt'
 "Code format
 Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'gr    aphql', 'markdown', 'vue', 'yaml', 'html'] }
+Plug 'vim-scripts/c.vim'
 
 call plug#end()
 
