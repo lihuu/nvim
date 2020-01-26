@@ -261,7 +261,19 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+" Coc 支持的一些插件
+" CocInstall coc-marketplace 插件可以查看所有的支持的插件
+" CocInstall coc-java
+" CocInstall coc-json
+" CocInstall coc-css
+" CocInstall coc-html
+" CocInstall coc-tsserver
+" CocInstall coc-python
+" CocInstall coc-git
+" CocInstall coc-lua
 "
+"
+"****************Coc config end **********************
 
 "config for prettier
 let g:prettier#autoformat = 0                                                                                       
