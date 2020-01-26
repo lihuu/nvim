@@ -38,7 +38,10 @@ Plug 'easymotion/vim-easymotion'
 "Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
 
 Plug 'neoclide/coc.nvim', {'branch':'release'}
+Plug 'davidhalter/jedi-vim'
+Plug 'tfnico/vim-gradle'
 Plug 'vim-scripts/Gundo'
+Plug 'cespare/vim-toml'
 Plug 'elzr/vim-json'
 Plug 'vim-scripts/FuzzyFinder'
 Plug 'vim-scripts/JavaScript-Indent'
