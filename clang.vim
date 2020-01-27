@@ -33,3 +33,4 @@ func! Rungdb()
 endfunc
 
 nmap <F5> :call CompileAndRun()<CR>
+nmap <F8> :call Rungdb()<CR>
