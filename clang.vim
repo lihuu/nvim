@@ -31,3 +31,5 @@ func! Rungdb()
     exec "!g++ % -std=c++11 -g -o %<"
 	exec "!gdb ./%<"
 endfunc
+
+nmap <F5> :call CompileAndRun()<CR>
