@@ -286,4 +286,7 @@ let g:prettier#config#parser='babylon'
 
 "nerdtree 按键映射
 noremap <leader>f :NERDTreeToggle<cr>
-source ~/.config/nvim/clang.vim
+
+if !(has('win16') || has('win32') || has('win64'))
+    source ~/.config/nvim/clang.vim
+endif
