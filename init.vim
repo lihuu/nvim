@@ -278,11 +278,12 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 "
 "****************Coc config end **********************
 
-"config for prettier
+"*****************config for prettier start ****************
 let g:prettier#autoformat = 0                                                                                       
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html Prettier
 "g:prettier#config#parser = 'babylon'
 let g:prettier#config#parser='babylon'
+"*****************config for prettier end ****************
 
 "nerdtree 按键映射
 noremap <leader>f :NERDTreeToggle<cr>
