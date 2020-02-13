@@ -59,7 +59,9 @@ Plug 'mileszs/ack.vim'
 "Plug 'gtk-vim-syntax'
 "Plug 'matchit.zip'
 Plug 'tpope/vim-surround'
-Plug 'Lokaltog/vim-powerline'
+"Plug 'Lokaltog/vim-powerline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'othree/html5.vim'
 
 "Javascript 相关的插件
@@ -291,3 +293,5 @@ noremap <leader>f :NERDTreeToggle<cr>
 if !(has('win16') || has('win32') || has('win64'))
     source ~/.config/nvim/clang.vim
 endif
+
+let g:airline_theme='luna'
