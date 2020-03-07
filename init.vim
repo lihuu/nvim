@@ -123,12 +123,6 @@ noremap <leader>ev :vsplit $MYVIMRC<cr>
 "配置文件生效的映射
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-"Moving fastly
-noremap <c-j> 5j
-noremap <c-k> 5k
-noremap <c-h> 5h
-noremap <c-l> 5l
-noremap <c-i> 0
 
 
 "
@@ -295,3 +289,12 @@ if !(has('win16') || has('win32') || has('win64'))
 endif
 
 let g:airline_theme='luna'
+
+noremap <leader>h <esc>:tabprevious<cr>
+noremap <leader>l <esc>:tabnext<cr>
+
+"Moving fastly
+noremap <c-j> 5j
+noremap <c-k> 5k
+noremap <c-h> 5h
+noremap <c-l> 5l
