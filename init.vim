@@ -103,6 +103,9 @@ Plug 'vim-scripts/DrawIt'
 "Code format
 Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'gr    aphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'vim-scripts/c.vim'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', {'do':{->fzf#install()}}
+
 
 call plug#end()
 
@@ -143,13 +146,17 @@ let g:vim_markdown_toc_autofit=1
 
 "****************************coc.nvim configuration*********************
 "coc.nvim configuration
+let g:coc_global_extensions = ['coc-json','coc-css','coc-tsserver','coc-html','coc-marketplace','coc-git','coc-lua','coc-java','coc-python','coc-jedi','coc-xml','coc-yaml','coc-go','coc-clangd']
+
 set cmdheight=1
+
 set updatetime=300
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
 
 " always show signcolumns
 set signcolumn=yes
+
 
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
@@ -299,3 +306,4 @@ noremap <c-j> 5j
 noremap <c-k> 5k
 noremap <c-h> 5h
 noremap <c-l> 5l
+noremap <c-p> :Files<cr>
