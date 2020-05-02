@@ -12,6 +12,7 @@ set shiftwidth=4
 set expandtab
 "set background=dark
 set cursorline
+set mouse=a
 "set termguicolors
 "colorscheme torte
 colorscheme molokai
