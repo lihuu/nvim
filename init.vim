@@ -307,3 +307,12 @@ noremap <c-k> 5k
 noremap <c-h> 5h
 noremap <c-l> 5l
 noremap <c-p> :Files<cr>
+
+
+"Config for emmet-vim
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+let g:user_emmet_mode='i' " value: n i v a
+""remap the default <C-Y> leader
+"let g:user_emmet_leader_key='<C-Z>'
+let g:user_emmet_expandabbr_key='<C-e>'
