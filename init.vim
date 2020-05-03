@@ -44,7 +44,7 @@ Plug 'tfnico/vim-gradle'
 Plug 'vim-scripts/Gundo'
 Plug 'cespare/vim-toml'
 Plug 'elzr/vim-json'
-Plug 'vim-scripts/FuzzyFinder'
+"Plug 'vim-scripts/FuzzyFinder'
 Plug 'vim-scripts/JavaScript-Indent'
 Plug 'vim-scripts/L9'
 Plug 'vim-scripts/Mark'
@@ -54,7 +54,7 @@ Plug 'vim-scripts/jQuery'
 ""'Plug 'VisIncr'
 
 "左边的文件树
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', {'on':'NERDTreeToggle'}
 "ack命令
 Plug 'mileszs/ack.vim'
 "Plug 'gtk-vim-syntax'
@@ -102,7 +102,7 @@ Plug 'mhinz/vim-startify'
 Plug 'vim-scripts/DrawIt'
 "Code format
 Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'gr    aphql', 'markdown', 'vue', 'yaml', 'html'] }
-Plug 'vim-scripts/c.vim'
+Plug 'vim-scripts/c.vim', {'for':['c','cpp']}
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', {'do':{->fzf#install()}}
 
