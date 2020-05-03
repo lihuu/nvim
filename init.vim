@@ -9,7 +9,9 @@ set nu
 syntax enable
 set ts=4
 set shiftwidth=4
+set autoread
 set expandtab
+
 "set background=dark
 set cursorline
 set mouse=a
