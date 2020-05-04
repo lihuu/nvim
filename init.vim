@@ -295,7 +295,8 @@ let g:prettier#config#parser='babylon'
 noremap <leader>f :NERDTreeToggle<cr>
 
 if !(has('win16') || has('win32') || has('win64'))
-    source ~/.config/nvim/clang.vim
+    "source ~/.config/nvim/clang.vim
+    source ~/.config/nvim/run.vim
 endif
 
 let g:airline_theme='luna'
