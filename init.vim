@@ -148,7 +148,7 @@ let g:vim_markdown_toc_autofit=1
 
 "****************************coc.nvim configuration*********************
 "coc.nvim configuration
-let g:coc_global_extensions = ['coc-json','coc-css','coc-tsserver','coc-html','coc-marketplace','coc-git','coc-lua','coc-java','coc-python','coc-jedi','coc-xml','coc-yaml','coc-go','coc-clangd']
+let g:coc_global_extensions = ['coc-json','coc-css','coc-tsserver','coc-html','coc-marketplace','coc-git','coc-lua','coc-java','coc-python','coc-xml','coc-yaml','coc-go','coc-clangd']
 
 set cmdheight=1
 
