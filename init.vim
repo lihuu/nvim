@@ -106,7 +106,8 @@ Plug 'vim-scripts/DrawIt'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'gr    aphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'vim-scripts/c.vim', {'for':['c','cpp']}
 Plug 'junegunn/fzf.vim'
-Plug 'junegunn/fzf', {'do':{->fzf#install()}}
+"Plug 'junegunn/fzf', {'do':{->fzf#install()}}
+Plug 'junegunn/fzf'
 
 
 call plug#end()
