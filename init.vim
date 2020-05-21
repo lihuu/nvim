@@ -9,7 +9,9 @@ set nu
 syntax enable
 set ts=4
 set shiftwidth=4
+set autoread
 set expandtab
+
 "set background=dark
 set cursorline
 set mouse=a
@@ -104,7 +106,8 @@ Plug 'vim-scripts/DrawIt'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'gr    aphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'vim-scripts/c.vim', {'for':['c','cpp']}
 Plug 'junegunn/fzf.vim'
-Plug 'junegunn/fzf', {'do':{->fzf#install()}}
+"Plug 'junegunn/fzf', {'do':{->fzf#install()}}
+Plug 'junegunn/fzf'
 
 
 call plug#end()
@@ -146,7 +149,7 @@ let g:vim_markdown_toc_autofit=1
 
 "****************************coc.nvim configuration*********************
 "coc.nvim configuration
-let g:coc_global_extensions = ['coc-json','coc-css','coc-tsserver','coc-html','coc-marketplace','coc-git','coc-lua','coc-java','coc-python','coc-jedi','coc-xml','coc-yaml','coc-go','coc-clangd']
+let g:coc_global_extensions = ['coc-json','coc-css','coc-tsserver','coc-html','coc-marketplace','coc-git','coc-lua','coc-java','coc-python','coc-xml','coc-yaml','coc-go','coc-clangd']
 
 set cmdheight=1
 
@@ -293,7 +296,8 @@ let g:prettier#config#parser='babylon'
 noremap <leader>f :NERDTreeToggle<cr>
 
 if !(has('win16') || has('win32') || has('win64'))
-    source ~/.config/nvim/clang.vim
+    "source ~/.config/nvim/clang.vim
+    source ~/.config/nvim/run.vim
 endif
 
 let g:airline_theme='luna'
@@ -307,3 +311,12 @@ noremap <c-k> 5k
 noremap <c-h> 5h
 noremap <c-l> 5l
 noremap <c-p> :Files<cr>
+
+
+"Config for emmet-vim
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+let g:user_emmet_mode='i' " value: n i v a
+""remap the default <C-Y> leader
+"let g:user_emmet_leader_key='<C-Z>'
+let g:user_emmet_expandabbr_key='<C-e>'

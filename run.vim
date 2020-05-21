@@ -12,8 +12,9 @@ func! CompileAndRun()
 		exec "!time java %<"
 	elseif &filetype == 'sh'
 		:!time bash %
-    elseif &filetype == 'js'
-        exec "!time node %<"
+    elseif (&filetype == 'js'|| &filetype == 'javascript.jsx')
+        "some common javascript file will be treat as jsx file
+        exec "!time node %"
 	elseif &filetype == 'python'
 		exec "!time python2.7 %"
     elseif &filetype == 'html'
