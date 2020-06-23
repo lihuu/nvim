@@ -108,6 +108,7 @@ Plug 'vim-scripts/c.vim', {'for':['c','cpp']}
 Plug 'junegunn/fzf.vim'
 "Plug 'junegunn/fzf', {'do':{->fzf#install()}}
 Plug 'junegunn/fzf'
+Plug 'pprovost/vim-ps1'
 
 
 call plug#end()
