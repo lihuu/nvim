@@ -45,12 +45,12 @@ Plug 'davidhalter/jedi-vim'
 Plug 'tfnico/vim-gradle'
 Plug 'vim-scripts/Gundo'
 Plug 'cespare/vim-toml'
-Plug 'elzr/vim-json'
+Plug 'elzr/vim-json', {'for':'json'}
 "Plug 'vim-scripts/FuzzyFinder'
 Plug 'vim-scripts/JavaScript-Indent'
 Plug 'vim-scripts/L9'
 Plug 'vim-scripts/Mark'
-Plug 'vim-scripts/gtags.vim'
+Plug 'vim-scripts/gtags.vim',{'for':'c'}
 Plug 'vim-scripts/jQuery'
 "Plug 'PasteBin.vim'
 ""'Plug 'VisIncr'
@@ -58,7 +58,7 @@ Plug 'vim-scripts/jQuery'
 "左边的文件树
 Plug 'scrooloose/nerdtree', {'on':'NERDTreeToggle'}
 "ack命令
-Plug 'mileszs/ack.vim'
+Plug 'mileszs/ack.vim',{'on':'Ack'}
 "Plug 'gtk-vim-syntax'
 "Plug 'matchit.zip'
 Plug 'tpope/vim-surround'
