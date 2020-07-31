@@ -41,7 +41,7 @@ Plug 'easymotion/vim-easymotion'
 "Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
 
 Plug 'neoclide/coc.nvim', {'branch':'release'}
-Plug 'davidhalter/jedi-vim'
+Plug 'davidhalter/jedi-vim',{'for':'python'}
 Plug 'tfnico/vim-gradle'
 Plug 'vim-scripts/Gundo'
 Plug 'cespare/vim-toml'
@@ -109,6 +109,7 @@ Plug 'junegunn/fzf.vim'
 "Plug 'junegunn/fzf', {'do':{->fzf#install()}}
 Plug 'junegunn/fzf'
 Plug 'pprovost/vim-ps1'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 
 call plug#end()
