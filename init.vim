@@ -110,6 +110,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf'
 Plug 'pprovost/vim-ps1'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'dylon/vim-antlr'
 
 
 call plug#end()
