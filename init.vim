@@ -15,7 +15,7 @@ set expandtab
 "set background=dark
 set cursorline
 set mouse=a
-"set termguicolors
+set termguicolors
 "colorscheme torte
 colorscheme molokai
 "set fdm=indent set sourcecode folding
@@ -111,7 +111,7 @@ Plug 'junegunn/fzf'
 Plug 'pprovost/vim-ps1'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'dylon/vim-antlr'
-
+"Plug 'neovim/nvim-lspconfig'
 
 call plug#end()
 
@@ -313,7 +313,10 @@ noremap <c-j> 5j
 noremap <c-k> 5k
 noremap <c-h> 5h
 noremap <c-l> 5l
+
+"fzf 
 noremap <c-p> :Files<cr>
+noremap <c-o> :Buffers<cr>
 
 
 "Config for emmet-vim
