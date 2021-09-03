@@ -15,7 +15,10 @@ set expandtab
 "set background=dark
 set cursorline
 set mouse=a
-set termguicolors
+if has('termguicolors')
+    set termguicolors
+endif
+"set termguicolors
 "colorscheme torte
 colorscheme molokai
 "set fdm=indent set sourcecode folding
