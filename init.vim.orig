@@ -331,9 +331,12 @@ noremap <c-l> 5l
 
 "fzf 
 noremap <c-p> :Files<cr>
+<<<<<<< HEAD
 "noremap <c-o> :Buffers<cr>
+=======
 noremap <c-o> :Buffers<cr>
 noremap <leader>F :Rg<cr>
+>>>>>>> c75d815 (Add Rg shortcut)
 
 
 "Config for emmet-vim
