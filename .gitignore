@@ -1,3 +1,7 @@
+/vim8*
+/vimfiles/bundle/
 plugged
 *.swp
-.netrwhist
+.DS_Store
+*.swo
+
