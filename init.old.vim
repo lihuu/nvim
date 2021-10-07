@@ -40,72 +40,16 @@ set noundofile
 "set pythonthreedll=python36.dll
 filetype off
 call plug#begin('~/.config/nvim/plugged')
-
-"左边的文件树
-Plug 'scrooloose/nerdtree', {'on':'NERDTreeToggle'}
-Plug 'Xuyuanp/nerdtree-git-plugin'
-
-Plug 'mileszs/ack.vim',{'on':'Ack'}
 Plug 'easymotion/vim-easymotion'
-Plug 'tpope/vim-surround'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-"
 "Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
-"
-Plug 'othree/html5.vim'
-Plug 'mattn/emmet-vim'
-Plug 'elzr/vim-json', {'for':'json'}
 
-"Javascript 相关的插件
-Plug 'pangloss/vim-javascript'
-Plug 'isruslan/vim-es6'
-Plug 'mxw/vim-jsx'
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
-
-"语法检查
-Plug 'scrooloose/syntastic'
-
-"Language Syntax
-Plug 'sheerun/vim-polyglot'
-Plug 'othree/xml.vim',{'for':'xml'}
-Plug 'sukima/xmledit',{'for','xml'}
-Plug 'chr4/nginx.vim'
-Plug 'calleerlandsson/pick.vim'
-Plug 'hail2u/vim-css3-syntax',{'for':'css'}
-Plug 'groenewege/vim-less',{'for':'less'}
-Plug 'Raimondi/delimitMate'
-Plug 'cespare/vim-toml',{'for':'toml'}
-Plug 'toml-lang/toml',{'for':'toml'}
-
-
-Plug 'luochen1990/rainbow'
-
-"
-Plug 'plasticboy/vim-markdown',{'for':'markdown'}
-Plug 'tyru/open-browser.vim'
-Plug 'iamcco/markdown-preview.nvim',{'do':'cd app & yarn install','for':'markdown'}
-Plug 'vimwiki/vimwiki'
-
-
-"Git config 
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-
-Plug 'flazz/vim-colorschemes'
-Plug 'phanviet/vim-monokai-pro'
-
-Plug 'mhinz/vim-startify'
-Plug 'honza/vim-snippets'
-Plug 'airblade/vim-rooter'
-"<leader>di start Drawit and <leader>ds to stop drawit
-Plug 'vim-scripts/DrawIt'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'gr    aphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'neoclide/coc.nvim', {'branch':'release'}
-Plug 'vim-scripts/c.vim', {'for':['c','cpp']}
+"Plug 'davidhalter/jedi-vim',{'for':'python'}
 Plug 'tfnico/vim-gradle'
 Plug 'vim-scripts/Gundo'
+Plug 'cespare/vim-toml'
+Plug 'elzr/vim-json', {'for':'json'}
+"Plug 'vim-scripts/FuzzyFinder'
 Plug 'vim-scripts/JavaScript-Indent'
 Plug 'vim-scripts/L9'
 Plug 'vim-scripts/Mark'
@@ -113,16 +57,60 @@ Plug 'vim-scripts/gtags.vim',{'for':'c'}
 Plug 'vim-scripts/jQuery'
 "Plug 'PasteBin.vim'
 ""'Plug 'VisIncr'
-"Plug 'davidhalter/jedi-vim',{'for':'python'}
-"Plug 'vim-scripts/FuzzyFinder'
+
+"左边的文件树
+Plug 'scrooloose/nerdtree', {'on':'NERDTreeToggle'}
+"ack命令
+Plug 'mileszs/ack.vim',{'on':'Ack'}
 "Plug 'gtk-vim-syntax'
 "Plug 'matchit.zip'
+Plug 'tpope/vim-surround'
 "Plug 'Lokaltog/vim-powerline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'othree/html5.vim'
 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim',{'on':['Files','Buffers']}
+"Javascript 相关的插件
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'isruslan/vim-es6'
 
+"语法检查
+Plug 'scrooloose/syntastic'
+"emmet
+Plug 'mattn/emmet-vim'
+"xml
+Plug 'othree/xml.vim'
+Plug 'sukima/xmledit'
 
+"Nginx 配置文件高亮
+Plug 'chr4/nginx.vim'
+Plug 'calleerlandsson/pick.vim'
+Plug 'hail2u/vim-css3-syntax' 
+Plug 'groenewege/vim-less'
+Plug 'Raimondi/delimitMate'
+"彩虹括号
+Plug 'luochen1990/rainbow'
+"Plug Markdown config
+Plug 'plasticboy/vim-markdown'
+Plug 'tyru/open-browser.vim'
+Plug 'iamcco/markdown-preview.nvim',{'do':'cd app & yarn install'}
+Plug 'vimwiki/vimwiki'
+
+"Git config 
+"
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'flazz/vim-colorschemes'
+Plug 'mhinz/vim-startify'
+"<leader>di start Drawit and <leader>ds to stop drawit
+Plug 'vim-scripts/DrawIt'
+"Code format
+Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'gr    aphql', 'markdown', 'vue', 'yaml', 'html'] }
+Plug 'vim-scripts/c.vim', {'for':['c','cpp']}
+Plug 'junegunn/fzf.vim'
+"Plug 'junegunn/fzf', {'do':{->fzf#install()}}
+Plug 'junegunn/fzf'
 Plug 'pprovost/vim-ps1'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'dylon/vim-antlr'
