@@ -70,7 +70,7 @@ Plug 'scrooloose/syntastic'
 "Language Syntax
 Plug 'sheerun/vim-polyglot'
 Plug 'othree/xml.vim',{'for':'xml'}
-Plug 'sukima/xmledit',{'for','xml'}
+Plug 'sukima/xmledit',{'for':'xml'}
 Plug 'chr4/nginx.vim'
 Plug 'calleerlandsson/pick.vim'
 Plug 'hail2u/vim-css3-syntax',{'for':'css'}
