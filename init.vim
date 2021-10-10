@@ -334,6 +334,7 @@ noremap <c-p> :Files<cr>
 "noremap <c-o> :Buffers<cr>
 noremap <c-o> :Buffers<cr>
 noremap <leader>F :Rg<cr>
+let g:fzf_preview_window = []
 
 
 "Config for emmet-vim
